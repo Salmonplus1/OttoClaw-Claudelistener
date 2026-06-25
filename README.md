@@ -1,16 +1,10 @@
 # OttoClaw — 一个不会开口说话的 AI 桌面人形机器人
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/FlashCat-Jordan/OttoClaw?style=social)](https://github.com/FlashCat-Jordan/OttoClaw)
-[![Release](https://img.shields.io/github/v/release/FlashCat-Jordan/OttoClaw)](https://github.com/FlashCat-Jordan/OttoClaw/releases)
-
 **[中文](README.md) | [English](README_EN.md)**
 
 <p align="center"><img src="assets/product_hero.jpg" width="800"></p>
 
-OttoClaw 是基于闪猫科技开源 OttoRobot AI 版机器人开发板的 AI 桌面级人形机器人交互系统，由闪猫科技研发。
 
----
 
 ## 🆕 Claude Code 螃蟹助手
 
@@ -63,7 +57,6 @@ OttoClaw 与市面上其他 AI 玩具和桌面机器人不同：
 - **全栈开源** — 硬件、软件、3D 模型全部开源
 - **全开放架构** — 自选模型、自选交互通道、自选 MCP / Skill 等服务接入，阿里云百炼一键打通丰富生态。
 - **功能模块母集** — 麦克风、显示屏、喇叭+功放、电源管理、电容触摸、6 路舵机、WiFi、蓝牙一板全集成。
-
 
 
 ---
@@ -223,7 +216,7 @@ oc> heap_info                     显示可用堆内存
 - **SPIFFS** — 本地存储记忆、会话、配置
 - **WebSocket** — 状态同步 + BOOT 广播
 
-详见 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) 与 [DEVLOG.md](DEVLOG.md)
+详见 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) 与 [DEVLOG.md](DEVLOG.md)（开发日志）
 
 ---
 
@@ -235,6 +228,3 @@ CC BY-NC-SA 4.0 — 署名、非商用、相同方式共享。个人学习与研
 
 灵感源自 [OpenClaw](https://github.com/openclaw/openclaw)、[Nanobot](https://github.com/HKUDS/nanobot)、[mimiclaw](https://github.com/memovai/mimiclaw)、[OttoDIYLib](https://github.com/OttoDIY/OttoDIYLib) 与 [ClackClaw](https://github.com/FlashCat-Jordan/ClackClaw)。我们将 AI Agent 架构带入嵌入式硬件，并赋予其更具实体感的设备体验。
 
-## Star History
-
-[![Star History](https://api.star-history.com/svg?repos=FlashCat-Jordan/OttoClaw&type=Date)](https://star-history.com/#FlashCat-Jordan/OttoClaw&Date)
