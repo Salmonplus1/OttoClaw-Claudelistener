@@ -1,6 +1,31 @@
-# 原项目：OttoClaw — 一个不会开口说话的 AI 桌面人形机器人
+# OttoClaw — 不会开口说话的 AI 桌面人形机器人
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue" alt="License"></a>
+  <img src="https://img.shields.io/badge/platform-ESP32--S3-green" alt="Platform">
+  <img src="https://img.shields.io/badge/framework-ESP--IDF%20v5.5-red" alt="Framework">
+  <img src="https://img.shields.io/badge/language-C%20%2F%20FreeRTOS-lightgrey" alt="Language">
+  <img src="https://img.shields.io/badge/gui-LVGL%209.x-orange" alt="GUI">
+</p>
 
 **[中文](README.md) | [English](README_EN.md)**
+
+---
+
+## 📖 目录
+
+- [⚡ 速览](#-速览)
+- [🎯 核心特性](#-核心特性)
+- [🦀 Claude Code 螃蟹助手](#-claude-code-螃蟹助手)
+- [🚀 快速上手](#-快速上手)
+- [🔧 从源码编译](#-从源码编译)
+- [📡 交互方式](#-交互方式)
+- [📁 项目结构](#-项目结构)
+- [🖥️ 配置与 CLI](#️-配置与-cli)
+- [🏗️ 技术架构](#️-技术架构)
+- [📄 许可证](#-许可证)
+
+---
 
 ## ⚡ 速览
 
@@ -17,7 +42,41 @@
 
 ---
 
-## 🆕 Claude Code 螃蟹助手
+## 🎯 核心特性
+
+OttoClaw 与市面上其他 AI 玩具和桌面机器人不同：
+
+### 🧠 真正的端侧 AI Agent
+
+纯 C / FreeRTOS，单块 ESP32-S3 即可运行全部功能。不依赖云端服务器 — 记忆、会话、技能全部 SPIFFS 本地存储，0.5W 功耗 24/7 在线。ReAct Agent 循环自主决策，内置 12 个工具（联网搜索、文件读写、时间查询、舵机控制等），Anthropic tool use 协议兼容。
+
+### 🤫 不会开口说话
+
+不像其他机器人那样絮叨打扰你。采用钉钉消息异步交互 — 忙碌时它安静等候，空闲时看一眼消息即可触发响应。安静如猫，始终在场。
+
+### 🎭 AI 自主情绪表达
+
+22 种情绪状态（+ 5 种 Claude Code 螃蟹状态），情绪随语境随机波动 — 开心时摇摆，害羞时低头掩面，思考时做出沉思姿态。情绪是自发的而非被动的，由 AI 根据对话上下文自主触发。
+
+### 💕 性格与成长体系
+
+它有自己的性格。初次见面可能对你爱答不理，随着互动增多逐渐熟络，感情自然升温。从**陌生 → 认识 → 熟络 → 亲密 → 羁绊**五阶段关系体系，AI 自主推演关系走向。LCD 右上角 1~5 颗红心是你们关系升温的见证。
+
+### 🦾 AI 控制每一个关节
+
+大模型自主决定 6 个舵机到达何种角度，创造任何它所想象的动作姿态 — 而非依赖预设脚本。内置 22 个动作原语 + AI Servo Sequences 自由序列，实现 AI 意识的物理化表达。
+
+### 🔌 全开放架构
+
+自选模型、自选交互通道、自选 MCP / Skill 等服务接入，阿里云百炼一键打通丰富生态。
+
+### 🧩 功能模块母集
+
+麦克风、LCD 显示屏、喇叭+功放、电源管理、电容触摸、6 路舵机、WiFi、蓝牙 — 一板全集成。
+
+---
+
+## 🦀 Claude Code 螃蟹助手
 
 > **新功能！** Otto LCD 实时显示 Claude Code 工作状态。Claude 思考时螃蟹冒气泡 💭，写代码时敲键盘 ⌨️，完成时举花 🌸，出错时冒烟 🔥。按 BOOT 按钮即可唤醒电脑端 Claude Code 窗口。
 
@@ -33,12 +92,10 @@
 | 🌸 Done | 举花挥手 + 闪光 | Claude 完成回答 / 6s 后自动 idle |
 | 🔥 Error | 冒烟 + X眼 | 出错时 |
 
-### PC 端交互
+### PC 端交互流程
 
-```
-Claude Code 状态变化 → hook 触发 → WebSocket → Otto LCD 自动切动画
-按 Otto 的 BOOT 按钮 → WebSocket 广播 → PC 窗口激活 + 自动回车确认
-```
+1. Claude Code 状态变化 → hook 触发 → WebSocket → Otto LCD 自动切动画
+2. 按 Otto 的 BOOT 按钮 → WebSocket 广播 → PC 窗口激活 + 自动回车确认
 
 ### 快速配置 Claude Code
 
@@ -56,27 +113,11 @@ python tools/claude_hooks/boot_listener.py --otto-ip <Otto的IP>
 
 ---
 
-## 核心亮点
-
-OttoClaw 与市面上其他 AI 玩具和桌面机器人不同：
-
-- **真正运行在本地端侧的轻量 Agent** — 纯 C / FreeRTOS，单块 ESP32-S3 即可运行全部功能，不依赖云端服务器，记忆、会话、技能全部本地存储，0.5W 功耗 24/7 在线。
-- **不会开口说话** — 不像其他机器人那样跟你说话打扰你。采用钉钉消息交互，忙碌时它安静等候，空闲时看一眼消息即可触发响应，安静如猫，始终在场。
-- **AI 自主情绪表达** — 22 种情绪状态（+ 5 种 Claude Code 螃蟹状态），情绪随语境随机波动 — 开心时摇摆，害羞时低头掩面，思考时做出沉思姿态，情绪是自发的而非被动的。
-- **性格与成长体系** — 它有自己的性格。初次见面可能对你爱答不理，随着互动增多逐渐熟络，感情自然升温。LCD右上角的红色爱心（1~5颗）是你们关系升温的见证。
-- **真正的 AI 控制每一个关节** — 大模型自主决定 6 个舵机到达何种角度，创造任何它所想象的动作姿态，实现 AI 意识的物理化表达，而非依赖预设脚本。
-- **全栈开源** — 硬件、软件、3D 模型全部开源
-- **全开放架构** — 自选模型、自选交互通道、自选 MCP / Skill 等服务接入，阿里云百炼一键打通丰富生态。
-- **功能模块母集** — 麦克风、显示屏、喇叭+功放、电源管理、电容触摸、6 路舵机、WiFi、蓝牙一板全集成。
-
-
----
-
-## 快速上手
+## 🚀 快速上手
 
 ### 前置要求
 
-1.  OttoRobot AI 版开发板或 DIY 套件
+1. OttoRobot AI 版开发板或 DIY 套件
 2. USB Type-C 数据线（须支持数据传输）
 3. 大模型 API Key
 4. 钉钉账号
@@ -97,7 +138,7 @@ esptool.py --chip esp32s3 --port COM3 --baud 460800 write_flash 0x0 ottoclaw.bin
 
 ---
 
-## 从源码编译
+## 🔧 从源码编译
 
 ```bash
 # 需要 ESP-IDF v5.5
@@ -132,80 +173,70 @@ python build_h.py        # → crab_data.h + crab_data.c
 
 ---
 
-## 交互方式
+## 📡 交互方式
 
-- **钉钉** — 主聊天入口。Stream 模式直连，安静不打扰
-- **WebSocket** — 端口 18789。内置聊天页、API、Claude Code 状态同步
-- **串口 CLI** — `oc>` 命令行，本地运维
+| 通道 | 端口 | 用途 |
+|------|------|------|
+| **钉钉** | — | 主聊天入口，Stream 模式直连，安静不打扰 |
+| **WebSocket** | `18789` | 内置聊天页、API、Claude Code 状态同步 |
+| **串口 CLI** | `115200` | `oc>` 命令行，本地运维 |
 
 ### WebSocket 协议
 
 **Claude Code → Otto**（状态同步）：
+
 ```json
 {"type": "agent_state", "state": "thinking"}
 ```
 
 **Otto → PC**（BOOT 广播）：
+
 ```json
 {"type": "boot_button", "action": "short_press"}
 ```
 
 ---
 
-## 项目结构
+## 📁 项目结构
 
 ```
-OttoClaw-main/
+OttoClaw/
 ├── main/
 │   ├── lcd/
-│   │   ├── agent_anim.c/h      # 🆕 螃蟹动画驱动
-│   │   ├── crab_data.c/h       # 🆕 RLE 动画数据 (1.2MB)
+│   │   ├── agent_anim.c/h      # 螃蟹动画驱动
+│   │   ├── crab_data.c/h       # RLE 动画数据 (1.2MB)
 │   │   └── lcd_display.c/h     # LCD 显示 + 22 情绪动画
 │   ├── gateway/ws_server.c/h   # WebSocket (含 agent_state)
 │   ├── agent/agent_loop.c/h    # ReAct Agent 循环
 │   ├── otto/                   # 舵机驱动 + 动作库
 │   ├── tools/                  # 12 个 AI 工具
+│   ├── dingtalk/               # 钉钉机器人
+│   ├── voice/                  # 语音转录
+│   ├── memory/                 # 长期记忆 + 会话管理
+│   ├── skills/                 # 技能系统
 │   └── ...
 ├── tools/
 │   ├── build_assets.py         # SVG → Playwright → RLE
 │   ├── build_h.py              # RLE → C 源码
 │   ├── assets/svg/             # 螃蟹 SVG 源文件
 │   └── claude_hooks/           # Claude Code 集成脚本
-├── partitions.csv              # OTA 4MB × 2
-├── sdkconfig.defaults.esp32s3
-├── DEVLOG.md                   # 开发日志
-└── README.md
+├── spiffs_data/                # SPIFFS 预置数据
+│   ├── config/                 # Agent 配置 (AGENTS.md, TOOLS.md, ...)
+│   ├── memory/                 # 记忆文件
+│   └── www/                    # Web 配置门户
+├── docs/                       # 文档 (ARCHITECTURE, TODO, RESEARCH_REPORT)
+├── partitions.csv              # OTA 分区方案 (4MB × 2)
+├── sdkconfig.defaults.esp32s3  # ESP-IDF 默认配置
+└── DEVLOG.md                   # 开发日志
 ```
 
 ---
 
-## 功能
+## 🖥️ 配置与 CLI
 
-### AI 自主情绪 — 22 种状态 + 5 种螃蟹动画
+配置门户可完成所有配置。以下 CLI 命令供高级用户通过串口使用（115200 波特率）：
 
-- **22 种情绪**：开心、害羞、思考、愤怒、惊讶、无聊、赛博、发晕、亢奋...
-- **5 种螃蟹**：idle、thinking、writing、done、error — 通过 Claude Code hook 自动切换
-- 情绪由 AI 根据语境自主触发，非被动预设
-
-### 性格与成长 — 5 阶段关系
-
-陌生 → 认识 → 熟络 → 亲密 → 羁绊。AI 自主推演关系走向。LCD 右上角 1~5 颗红心。
-
-### AI 控制舵机 — 6 关节自主运动
-
-22 个动作原语 + AI Servo Sequences。大模型根据语义自主设计姿态。
-
-### 对话、搜索与记忆
-
-钉钉交互，支持联网搜索、长期记忆、跨重启保留。
-
----
-
-## 配置与 CLI
-
-配置门户可完成所有配置。以下 CLI 命令供高级用户通过串口使用（115200）：
-
-```
+```text
 oc> wifi_set <ssid> <pass>        设置 WiFi
 oc> set_api_key <key>             设置 API Key
 oc> set_model <model>             设置模型名称
@@ -218,24 +249,29 @@ oc> heap_info                     显示可用堆内存
 
 ---
 
-## 技术架构
+## 🏗️ 技术架构
 
-- **纯 C / FreeRTOS** — 单块 ESP32-S3 运行全部功能
-- **双核架构** — Core 0 网络 I/O，Core 1 Agent 循环
-- **Anthropic tool use / ReAct** — AI 自主决定工具调用
-- **LVGL 9.x** — 图形界面 + Canvas 动画
-- **SPIFFS** — 本地存储记忆、会话、配置
-- **WebSocket** — 状态同步 + BOOT 广播
+| 层级 | 技术选型 |
+|------|---------|
+| **RTOS** | FreeRTOS，双核 (Core 0: 网络 I/O, Core 1: Agent 循环) |
+| **AI Agent** | ReAct 循环 + Anthropic tool use 协议 |
+| **GUI** | LVGL 9.x + Canvas 直接写缓冲区 |
+| **存储** | SPIFFS — 记忆、会话、技能、配置本地持久化 |
+| **网络** | WiFi + WebSocket (18789) + HTTP Proxy |
+| **动画** | RLE 游程编码压缩，Playwright SVG 采样关键帧 |
 
-详见 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) 与 [DEVLOG.md](DEVLOG.md)（开发日志）
+详见 [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) 与 [DEVLOG.md](DEVLOG.md)
 
 ---
 
-## 许可证
+## 📄 许可证
 
-CC BY-NC-SA 4.0 — 署名、非商用、相同方式共享。个人学习与研究自由使用，商业用途需另行授权。
+[CC BY-NC-SA 4.0](LICENSE) — 署名、非商用、相同方式共享。
 
-## 致谢
+个人学习与研究自由使用，商业用途需另行授权。
+
+---
+
+## 🙏 致谢
 
 灵感源自 [OpenClaw](https://github.com/openclaw/openclaw)、[Nanobot](https://github.com/HKUDS/nanobot)、[mimiclaw](https://github.com/memovai/mimiclaw)、[OttoDIYLib](https://github.com/OttoDIY/OttoDIYLib) 与 [ClackClaw](https://github.com/FlashCat-Jordan/ClackClaw)。我们将 AI Agent 架构带入嵌入式硬件，并赋予其更具实体感的设备体验。
-
