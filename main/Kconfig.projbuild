@@ -1,0 +1,25 @@
+menu "OttoClaw Board"
+
+    choice OTTOCLAW_BOARD_VARIANT
+        prompt "Board Variant"
+        default OTTOCLAW_BOARD_OTTO_AI
+        help
+            Select your PCB version.
+
+            OttoRobot AI = non-camera board (default, most common).
+            OttoCam519 = camera board with OV2640/OV3660 module
+                         (different GPIO routing for servos and LCD).
+
+        config OTTOCLAW_BOARD_OTTO_AI
+            bool "OttoRobot AI (non-camera)"
+
+        config OTTOCLAW_BOARD_CAM519
+            bool "OttoCam519 (camera)"
+    endchoice
+
+    config OTTOCLAW_BOARD_VARIANT
+        int
+        default 1 if OTTOCLAW_BOARD_OTTO_AI
+        default 2 if OTTOCLAW_BOARD_CAM519
+
+endmenu

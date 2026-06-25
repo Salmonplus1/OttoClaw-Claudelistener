@@ -1,0 +1,261 @@
+[2026-06-24 17:07:05] === boot_listener starting ===
+[2026-06-24 17:07:05] Otto: 192.168.4.1:18789
+[2026-06-24 17:07:05] Log:  D:\OTTOrobot\OttoClaw-main\OttoClaw-main\tools\claude_hooks\boot_listener.log
+[2026-06-24 17:07:06] Connecting to ws://192.168.4.1:18789/ws ...
+[2026-06-24 17:07:16] WS_ERR: timed out — reconnecting in 1s
+[2026-06-24 17:07:27] WS_ERR: timed out — reconnecting in 2s
+[2026-06-24 17:07:39] WS_ERR: timed out — reconnecting in 4s
+[2026-06-24 17:07:53] WS_ERR: timed out — reconnecting in 8s
+[2026-06-24 17:08:11] WS_ERR: timed out — reconnecting in 16s
+[2026-06-24 17:08:37] WS_ERR: timed out — reconnecting in 30s
+[2026-06-24 17:14:15] === boot_listener starting ===
+[2026-06-24 17:14:15] Otto: 10.20.149.112:18789
+[2026-06-24 17:14:15] Log:  D:\OTTOrobot\OttoClaw-main\OttoClaw-main\tools\claude_hooks\boot_listener.log
+[2026-06-24 17:14:16] Connecting to ws://10.20.149.112:18789/ws ...
+[2026-06-24 17:14:16] Connected to ws://10.20.149.112:18789/ws
+[2026-06-24 17:14:26] WS_ERR: Connection timed out — reconnecting in 1s
+[2026-06-24 17:14:27] Connected to ws://10.20.149.112:18789/ws
+[2026-06-24 17:14:37] WS_ERR: Connection timed out — reconnecting in 1s
+[2026-06-24 17:14:39] Connected to ws://10.20.149.112:18789/ws
+[2026-06-24 17:14:49] WS_ERR: Connection timed out — reconnecting in 1s
+[2026-06-24 17:14:50] Connected to ws://10.20.149.112:18789/ws
+[2026-06-24 17:15:00] WS_ERR: Connection timed out — reconnecting in 1s
+[2026-06-24 17:15:12] WS_ERR: Connection timed out — reconnecting in 2s
+[2026-06-24 17:15:24] WS_ERR: Connection timed out — reconnecting in 4s
+[2026-06-24 17:15:38] WS_ERR: Connection timed out — reconnecting in 8s
+[2026-06-24 17:15:57] WS_ERR: Connection timed out — reconnecting in 16s
+[2026-06-24 17:16:23] WS_ERR: Connection timed out — reconnecting in 30s
+[2026-06-24 17:17:12] === boot_listener starting ===
+[2026-06-24 17:17:12] Otto: 10.20.149.112:18789
+[2026-06-24 17:17:12] Log:  D:\OTTOrobot\OttoClaw-main\OttoClaw-main\tools\claude_hooks\boot_listener.log
+[2026-06-24 17:17:12] Connecting to ws://10.20.149.112:18789/ws ...
+[2026-06-24 17:17:12] Connected to ws://10.20.149.112:18789/ws
+[2026-06-24 17:17:19] BOOT_BUTTON  action=short_press
+[2026-06-24 17:17:19] IMPORT_ERR: No module named 'pyautogui'
+[2026-06-24 17:17:20] BOOT_BUTTON  action=short_press
+[2026-06-24 17:17:20] IMPORT_ERR: No module named 'pyautogui'
+[2026-06-24 17:17:24] BOOT_BUTTON  action=short_press
+[2026-06-24 17:17:24] IMPORT_ERR: No module named 'pyautogui'
+[2026-06-24 17:17:34] BOOT_BUTTON  action=short_press
+[2026-06-24 17:17:34] IMPORT_ERR: No module named 'pyautogui'
+[2026-06-24 17:18:03] BOOT_BUTTON  action=short_press
+[2026-06-24 17:18:03] IMPORT_ERR: No module named 'pyautogui'
+[2026-06-24 17:18:05] BOOT_BUTTON  action=short_press
+[2026-06-24 17:18:05] IMPORT_ERR: No module named 'pyautogui'
+[2026-06-24 17:18:06] BOOT_BUTTON  action=short_press
+[2026-06-24 17:18:06] IMPORT_ERR: No module named 'pyautogui'
+[2026-06-24 17:18:06] BOOT_BUTTON  action=short_press
+[2026-06-24 17:18:06] IMPORT_ERR: No module named 'pyautogui'
+[2026-06-24 17:18:49] BOOT_BUTTON  action=short_press
+[2026-06-24 17:18:49] IMPORT_ERR: No module named 'pyautogui'
+[2026-06-24 17:18:50] BOOT_BUTTON  action=short_press
+[2026-06-24 17:18:50] IMPORT_ERR: No module named 'pyautogui'
+[2026-06-24 17:20:55] BOOT_BUTTON  action=short_press
+[2026-06-24 17:20:56] Found window: hwnd=13241316 title='管理员: Windows PowerShell'
+[2026-06-24 17:20:56] Activated + Enter sent to hwnd=13241316
+[2026-06-24 17:23:09] === boot_listener starting ===
+[2026-06-24 17:23:09] Otto: 10.20.149.112:18789
+[2026-06-24 17:23:09] Log:  D:\OTTOrobot\OttoClaw-main\OttoClaw-main\tools\claude_hooks\boot_listener.log
+[2026-06-24 17:23:09] Connecting to ws://10.20.149.112:18789/ws ...
+[2026-06-24 17:23:10] Connected to ws://10.20.149.112:18789/ws
+[2026-06-24 17:23:19] BOOT_BUTTON  action=short_press
+[2026-06-24 17:23:19] Found window: hwnd=13241316 title='管理员: Windows PowerShell'
+[2026-06-24 17:23:20] Activated + Enter sent to hwnd=13241316
+[2026-06-24 17:23:43] BOOT_BUTTON  action=short_press
+[2026-06-24 17:23:43] Found window: hwnd=13241316 title='claude'
+[2026-06-24 17:23:43] Activated + Enter sent to hwnd=13241316
+[2026-06-24 17:26:10] BOOT_BUTTON  action=short_press
+[2026-06-24 17:26:10] No matching terminal window found
+[2026-06-24 17:26:10] No window to activate
+[2026-06-24 17:26:27] BOOT_BUTTON  action=short_press
+[2026-06-24 17:26:27] Found window: hwnd=13241316 title='管理员: Windows PowerShell'
+[2026-06-24 17:26:28] Activated + Enter sent to hwnd=13241316
+[2026-06-24 17:26:33] BOOT_BUTTON  action=short_press
+[2026-06-24 17:26:33] No matching terminal window found
+[2026-06-24 17:26:33] No window to activate
+[2026-06-24 17:27:49] BOOT_BUTTON  action=short_press
+[2026-06-24 17:27:49] Found window: hwnd=13241316 title='管理员: Windows PowerShell'
+[2026-06-24 17:27:49] Activated + Enter sent to hwnd=13241316
+[2026-06-24 17:30:05] === boot_listener starting ===
+[2026-06-24 17:30:05] Otto: 10.20.149.112:18789
+[2026-06-24 17:30:05] Log:  D:\OTTOrobot\OttoClaw-main\OttoClaw-main\tools\claude_hooks\boot_listener.log
+[2026-06-24 17:30:05] Connecting to ws://10.20.149.112:18789/ws ...
+[2026-06-24 17:30:06] Connected to ws://10.20.149.112:18789/ws
+[2026-06-24 17:32:24] BOOT_BUTTON  action=short_press
+[2026-06-24 17:32:25] Found window: hwnd=14354914 title='管理员: Windows PowerShell'
+[2026-06-24 17:32:25] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:39:13] BOOT_BUTTON  action=short_press
+[2026-06-24 17:39:13] No matching terminal window found
+[2026-06-24 17:39:13] No window to activate
+[2026-06-24 17:39:17] BOOT_BUTTON  action=short_press
+[2026-06-24 17:39:17] No matching terminal window found
+[2026-06-24 17:39:17] No window to activate
+[2026-06-24 17:39:21] BOOT_BUTTON  action=short_press
+[2026-06-24 17:39:21] Found window: hwnd=14354914 title='管理员: Windows PowerShell'
+[2026-06-24 17:39:21] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:39:32] BOOT_BUTTON  action=short_press
+[2026-06-24 17:39:32] No matching terminal window found
+[2026-06-24 17:39:32] No window to activate
+[2026-06-24 17:40:15] === boot_listener starting ===
+[2026-06-24 17:40:15] Otto: 10.20.149.112:18789
+[2026-06-24 17:40:15] Log:  D:\OTTOrobot\OttoClaw-main\OttoClaw-main\tools\claude_hooks\boot_listener.log
+[2026-06-24 17:40:15] Connecting to ws://10.20.149.112:18789/ws ...
+[2026-06-24 17:40:16] Connected to ws://10.20.149.112:18789/ws
+[2026-06-24 17:40:25] BOOT_BUTTON  action=short_press
+[2026-06-24 17:40:26] No matching window found. All window titles: ['主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '系统托盘溢出窗口。', '电池指示器', '敤楶散渭瑯晩捩瑡潩n', '牡畤湩ⵯ敳楲污楤捳癯牥yuser32.dll', 'Weixin']
+[2026-06-24 17:40:26] No window to activate
+[2026-06-24 17:41:29] === boot_listener starting ===
+[2026-06-24 17:41:29] Otto: 10.20.149.112:18789
+[2026-06-24 17:41:29] Log:  D:\OTTOrobot\OttoClaw-main\OttoClaw-main\tools\claude_hooks\boot_listener.log
+[2026-06-24 17:41:29] Connecting to ws://10.20.149.112:18789/ws ...
+[2026-06-24 17:41:30] Connected to ws://10.20.149.112:18789/ws
+[2026-06-24 17:41:31] BOOT_BUTTON  action=short_press
+[2026-06-24 17:41:32] Found window: hwnd=14354914 title='管理员: Windows PowerShell'
+[2026-06-24 17:41:32] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:41:35] BOOT_BUTTON  action=short_press
+[2026-06-24 17:41:35] Found window: hwnd=14354914 title='管理员: Windows PowerShell'
+[2026-06-24 17:41:36] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:41:44] BOOT_BUTTON  action=short_press
+[2026-06-24 17:41:44] Found window: hwnd=14354914 title='claude'
+[2026-06-24 17:41:44] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:42:15] WS_ERR: [WinError 10054] 远程主机强迫关闭了一个现有的连接。 — reconnecting in 1s
+[2026-06-24 17:42:16] Connected to ws://10.20.149.112:18789/ws
+[2026-06-24 17:42:24] BOOT_BUTTON  action=short_press
+[2026-06-24 17:42:24] No matching window found. All window titles: ['主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '系统托盘溢出窗口。', '电池指示器', '敤楶散渭瑯晩捩瑡潩n', '牡畤湩ⵯ敳楲污楤捳癯牥yuser32.dll', 'Weixin']
+[2026-06-24 17:42:24] No window to activate
+[2026-06-24 17:42:27] BOOT_BUTTON  action=short_press
+[2026-06-24 17:42:27] No matching window found. All window titles: ['主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '系统托盘溢出窗口。', '电池指示器', '敤楶散渭瑯晩捩瑡潩n', '牡畤湩ⵯ敳楲污楤捳癯牥yuser32.dll', 'Weixin']
+[2026-06-24 17:42:27] No window to activate
+[2026-06-24 17:42:27] BOOT_BUTTON  action=short_press
+[2026-06-24 17:42:27] No matching window found. All window titles: ['主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '系统托盘溢出窗口。', '电池指示器', '敤楶散渭瑯晩捩瑡潩n', '牡畤湩ⵯ敳楲污楤捳癯牥yuser32.dll', 'Weixin']
+[2026-06-24 17:42:27] No window to activate
+[2026-06-24 17:42:30] BOOT_BUTTON  action=short_press
+[2026-06-24 17:42:30] No matching window found. All window titles: ['主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '系统托盘溢出窗口。', '电池指示器', '敤楶散渭瑯晩捩瑡潩n', '牡畤湩ⵯ敳楲污楤捳癯牥yuser32.dll', 'Weixin']
+[2026-06-24 17:42:30] No window to activate
+[2026-06-24 17:42:30] BOOT_BUTTON  action=short_press
+[2026-06-24 17:42:30] No matching window found. All window titles: ['主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '主机弹出窗口', '系统托盘溢出窗口。', '电池指示器', '敤楶散渭瑯晩捩瑡潩n', '牡畤湩ⵯ敳楲污楤捳癯牥yuser32.dll', 'Weixin']
+[2026-06-24 17:42:30] No window to activate
+[2026-06-24 17:46:32] === boot_listener starting ===
+[2026-06-24 17:46:32] Otto: 10.20.149.112:18789
+[2026-06-24 17:46:32] Log:  D:\OTTOrobot\OttoClaw-main\OttoClaw-main\tools\claude_hooks\boot_listener.log
+[2026-06-24 17:46:32] Connecting to ws://10.20.149.112:18789/ws ...
+[2026-06-24 17:46:32] Connected to ws://10.20.149.112:18789/ws
+[2026-06-24 17:46:48] BOOT_BUTTON  action=short_press
+[2026-06-24 17:46:48] BOOT_BUTTON  action=short_press
+[2026-06-24 17:46:49] Found by class (Windows Terminal): hwnd=14354914
+[2026-06-24 17:46:49] Found by class (Windows Terminal): hwnd=14354914
+[2026-06-24 17:46:49] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:46:49] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:47:17] BOOT_BUTTON  action=short_press
+[2026-06-24 17:47:17] BOOT_BUTTON  action=short_press
+[2026-06-24 17:47:17] Found by class (Windows Terminal): hwnd=14354914
+[2026-06-24 17:47:17] Found by class (Windows Terminal): hwnd=14354914
+[2026-06-24 17:47:18] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:47:18] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:47:48] BOOT_BUTTON  action=short_press
+[2026-06-24 17:47:48] BOOT_BUTTON  action=short_press
+[2026-06-24 17:47:48] Found by class (Windows Terminal): hwnd=14354914
+[2026-06-24 17:47:48] Found by class (Windows Terminal): hwnd=14354914
+[2026-06-24 17:47:48] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:47:48] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:49:51] BOOT_BUTTON  action=short_press
+[2026-06-24 17:49:51] BOOT_BUTTON  action=short_press
+[2026-06-24 17:49:51] Found by title: hwnd=14354914 title='claude'
+[2026-06-24 17:49:51] Found by title: hwnd=14354914 title='claude'
+[2026-06-24 17:49:52] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:49:52] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:52:22] WS_ERR: [WinError 10054] 远程主机强迫关闭了一个现有的连接。 — reconnecting in 1s
+[2026-06-24 17:52:28] WS_ERR: timed out — reconnecting in 2s
+[2026-06-24 17:52:35] WS_ERR: timed out — reconnecting in 4s
+[2026-06-24 17:52:39] Connected to ws://10.20.149.112:18789/ws
+[2026-06-24 17:54:15] BOOT_BUTTON  action=short_press
+[2026-06-24 17:54:15] BOOT_BUTTON  action=short_press
+[2026-06-24 17:54:15] BOOT_BUTTON  action=short_press
+[2026-06-24 17:54:15] Found by title: hwnd=14354914 title='claude'
+[2026-06-24 17:54:15] Found by title: hwnd=14354914 title='claude'
+[2026-06-24 17:54:15] Found by title: hwnd=14354914 title='claude'
+[2026-06-24 17:54:16] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:54:16] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:54:16] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:54:45] BOOT_BUTTON  action=short_press
+[2026-06-24 17:54:45] BOOT_BUTTON  action=short_press
+[2026-06-24 17:54:45] BOOT_BUTTON  action=short_press
+[2026-06-24 17:54:45] Found by title: hwnd=3214506 title='.claude - 文件资源管理器'
+[2026-06-24 17:54:45] Found by title: hwnd=3214506 title='.claude - 文件资源管理器'
+[2026-06-24 17:54:45] Found by title: hwnd=3214506 title='.claude - 文件资源管理器'
+[2026-06-24 17:54:45] Activated + Enter sent to hwnd=3214506
+[2026-06-24 17:54:45] Activated + Enter sent to hwnd=3214506
+[2026-06-24 17:54:57] BOOT_BUTTON  action=short_press
+[2026-06-24 17:54:57] BOOT_BUTTON  action=short_press
+[2026-06-24 17:54:57] Found by class (Windows Terminal): hwnd=14354914
+[2026-06-24 17:54:57] BOOT_BUTTON  action=short_press
+[2026-06-24 17:54:57] Found by class (Windows Terminal): hwnd=14354914
+[2026-06-24 17:54:57] Found by class (Windows Terminal): hwnd=14354914
+[2026-06-24 17:54:58] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:54:58] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:54:58] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:56:01] BOOT_BUTTON  action=short_press
+[2026-06-24 17:56:01] BOOT_BUTTON  action=short_press
+[2026-06-24 17:56:01] Found by class (Windows Terminal): hwnd=14354914
+[2026-06-24 17:56:01] BOOT_BUTTON  action=short_press
+[2026-06-24 17:56:01] Found by class (Windows Terminal): hwnd=14354914
+[2026-06-24 17:56:01] Found by class (Windows Terminal): hwnd=14354914
+[2026-06-24 17:56:01] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:56:01] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:56:01] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:58:58] === boot_listener starting ===
+[2026-06-24 17:58:58] Otto: 10.20.149.112:18789
+[2026-06-24 17:58:58] Log:  D:\OTTOrobot\OttoClaw-main\OttoClaw-main\tools\claude_hooks\boot_listener.log
+[2026-06-24 17:58:58] Connecting to ws://10.20.149.112:18789/ws ...
+[2026-06-24 17:58:58] Connected to ws://10.20.149.112:18789/ws
+[2026-06-24 17:59:26] BOOT_BUTTON  action=short_press
+[2026-06-24 17:59:26] BOOT_BUTTON  action=short_press
+[2026-06-24 17:59:26] BOOT_BUTTON  action=short_press
+[2026-06-24 17:59:26] Terminal windows: [(14354914, 'CASCADIA_HOSTING_WINDOW_CLASS', '✳ 在桌面写测试文档'), (66094, 'ConsoleWindowClass', 'C:\\Program Files (x86)\\Sangfor\\aTrust\\aTrustAgent\\xtunnel-64\\aTrustXtunnel.exe')]
+[2026-06-24 17:59:26] Terminal windows: [(14354914, 'CASCADIA_HOSTING_WINDOW_CLASS', '✳ 在桌面写测试文档'), (66094, 'ConsoleWindowClass', 'C:\\Program Files (x86)\\Sangfor\\aTrust\\aTrustAgent\\xtunnel-64\\aTrustXtunnel.exe')]
+[2026-06-24 17:59:26] Terminal windows: [(14354914, 'CASCADIA_HOSTING_WINDOW_CLASS', '✳ 在桌面写测试文档'), (66094, 'ConsoleWindowClass', 'C:\\Program Files (x86)\\Sangfor\\aTrust\\aTrustAgent\\xtunnel-64\\aTrustXtunnel.exe')]
+[2026-06-24 17:59:26] No keyword match, fallback to first terminal: hwnd=14354914
+[2026-06-24 17:59:26] No keyword match, fallback to first terminal: hwnd=14354914
+[2026-06-24 17:59:26] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:59:26] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:59:26] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:59:40] BOOT_BUTTON  action=short_press
+[2026-06-24 17:59:40] BOOT_BUTTON  action=short_press
+[2026-06-24 17:59:40] BOOT_BUTTON  action=short_press
+[2026-06-24 17:59:40] Terminal windows: [(14354914, 'CASCADIA_HOSTING_WINDOW_CLASS', '✳ 在桌面写测试文档'), (66094, 'ConsoleWindowClass', 'C:\\Program Files (x86)\\Sangfor\\aTrust\\aTrustAgent\\xtunnel-64\\aTrustXtunnel.exe')]
+[2026-06-24 17:59:40] No keyword match, fallback to first terminal: hwnd=14354914
+[2026-06-24 17:59:40] No keyword match, fallback to first terminal: hwnd=14354914
+[2026-06-24 17:59:40] Terminal windows: [(14354914, 'CASCADIA_HOSTING_WINDOW_CLASS', '✳ 在桌面写测试文档'), (66094, 'ConsoleWindowClass', 'C:\\Program Files (x86)\\Sangfor\\aTrust\\aTrustAgent\\xtunnel-64\\aTrustXtunnel.exe')]
+[2026-06-24 17:59:40] No keyword match, fallback to first terminal: hwnd=14354914
+[2026-06-24 17:59:40] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:59:40] Activated + Enter sent to hwnd=14354914
+[2026-06-24 17:59:40] Activated + Enter sent to hwnd=14354914
+[2026-06-24 18:00:09] BOOT_BUTTON  action=short_press
+[2026-06-24 18:00:09] BOOT_BUTTON  action=short_press
+[2026-06-24 18:00:09] Terminal windows: [(14354914, 'CASCADIA_HOSTING_WINDOW_CLASS', '✳ 在桌面写测试文档'), (66094, 'ConsoleWindowClass', 'C:\\Program Files (x86)\\Sangfor\\aTrust\\aTrustAgent\\xtunnel-64\\aTrustXtunnel.exe')]
+[2026-06-24 18:00:09] BOOT_BUTTON  action=short_press
+[2026-06-24 18:00:09] Terminal windows: [(14354914, 'CASCADIA_HOSTING_WINDOW_CLASS', '✳ 在桌面写测试文档'), (66094, 'ConsoleWindowClass', 'C:\\Program Files (x86)\\Sangfor\\aTrust\\aTrustAgent\\xtunnel-64\\aTrustXtunnel.exe')]
+[2026-06-24 18:00:09] No keyword match, fallback to first terminal: hwnd=14354914
+[2026-06-24 18:00:09] No keyword match, fallback to first terminal: hwnd=14354914
+[2026-06-24 18:00:09] Terminal windows: [(14354914, 'CASCADIA_HOSTING_WINDOW_CLASS', '✳ 在桌面写测试文档'), (66094, 'ConsoleWindowClass', 'C:\\Program Files (x86)\\Sangfor\\aTrust\\aTrustAgent\\xtunnel-64\\aTrustXtunnel.exe')]
+[2026-06-24 18:00:09] No keyword match, fallback to first terminal: hwnd=14354914
+[2026-06-24 18:00:09] Activated + Enter sent to hwnd=14354914
+[2026-06-24 18:00:09] Activated + Enter sent to hwnd=14354914
+[2026-06-24 18:12:29] WS_ERR: [WinError 10054] 远程主机强迫关闭了一个现有的连接。 — reconnecting in 1s
+[2026-06-24 18:12:31] Connected to ws://10.20.149.112:18789/ws
+[2026-06-24 18:15:02] BOOT_BUTTON  action=short_press
+[2026-06-24 18:15:02] Terminal windows: [(6031148, 'ConsoleWindowClass', 'C:\\windows\\system32\\HWAudioDriver\\HWVEAudioSession.exe'), (66094, 'ConsoleWindowClass', 'C:\\Program Files (x86)\\Sangfor\\aTrust\\aTrustAgent\\xtunnel-64\\aTrustXtunnel.exe'), (14354914, 'CASCADIA_HOSTING_WINDOW_CLASS', '✳ 在桌面写测试文档')]
+[2026-06-24 18:15:02] No keyword match, fallback to first terminal: hwnd=6031148
+[2026-06-24 18:15:03] Activated + Enter sent to hwnd=6031148
+[2026-06-24 18:15:06] BOOT_BUTTON  action=short_press
+[2026-06-24 18:15:06] Terminal windows: [(6031148, 'ConsoleWindowClass', 'C:\\windows\\system32\\HWAudioDriver\\HWVEAudioSession.exe'), (66094, 'ConsoleWindowClass', 'C:\\Program Files (x86)\\Sangfor\\aTrust\\aTrustAgent\\xtunnel-64\\aTrustXtunnel.exe'), (14354914, 'CASCADIA_HOSTING_WINDOW_CLASS', '✳ 在桌面写测试文档')]
+[2026-06-24 18:15:06] No keyword match, fallback to first terminal: hwnd=6031148
+[2026-06-24 18:15:07] Activated + Enter sent to hwnd=6031148
+[2026-06-24 18:15:15] BOOT_BUTTON  action=short_press
+[2026-06-24 18:15:15] Terminal windows: [(14354914, 'CASCADIA_HOSTING_WINDOW_CLASS', '✳ 在桌面写测试文档'), (6031148, 'ConsoleWindowClass', 'C:\\windows\\system32\\HWAudioDriver\\HWVEAudioSession.exe'), (66094, 'ConsoleWindowClass', 'C:\\Program Files (x86)\\Sangfor\\aTrust\\aTrustAgent\\xtunnel-64\\aTrustXtunnel.exe')]
+[2026-06-24 18:15:15] No keyword match, fallback to first terminal: hwnd=14354914
+[2026-06-24 18:15:15] Activated + Enter sent to hwnd=14354914
+[2026-06-24 18:16:17] BOOT_BUTTON  action=short_press
+[2026-06-24 18:16:17] Terminal windows: [(14354914, 'CASCADIA_HOSTING_WINDOW_CLASS', '✳ 在桌面写测试文档'), (6031148, 'ConsoleWindowClass', 'C:\\windows\\system32\\HWAudioDriver\\HWVEAudioSession.exe'), (66094, 'ConsoleWindowClass', 'C:\\Program Files (x86)\\Sangfor\\aTrust\\aTrustAgent\\xtunnel-64\\aTrustXtunnel.exe')]
+[2026-06-24 18:16:17] No keyword match, fallback to first terminal: hwnd=14354914
+[2026-06-24 18:16:18] Activated + Enter sent to hwnd=14354914
