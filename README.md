@@ -1,10 +1,21 @@
-# OttoClaw — 一个不会开口说话的 AI 桌面人形机器人
+# 原项目：OttoClaw — 一个不会开口说话的 AI 桌面人形机器人
 
 **[中文](README.md) | [English](README_EN.md)**
 
-<p align="center"><img src="assets/product_hero.jpg" width="800"></p>
+## ⚡ 速览
 
+> OttoClaw 是一个运行在 ESP32-S3 上的**端侧 AI 桌面机器人平台** — 纯 C / FreeRTOS，不依赖云端，全部本地运行。
 
+- 🦀 **Claude Code 状态实物反馈** — LCD 实时渲染 5 种螃蟹动画（思考/编码/完成/出错/空闲），RLE 压缩将 17.7MB 动画压缩至 1.2MB，15fps 流畅播放
+- 🤖 **端侧 ReAct Agent** — 本地 LLM 代理自主决策，12 个内置工具（搜索、文件、时间、舵机控制等），记忆/会话/技能全部 SPIFFS 本地存储
+- 💬 **钉钉机器人主通道** — Stream 模式直连，安静不打扰的异步交互体验
+- 🌐 **WebSocket 双向网关** — <80ms 状态同步延迟，支持 Claude Code ↔ Otto 实时联动 + BOOT 按钮反向唤醒 PC
+- 🎭 **22 种自主情绪 + 5 阶段成长** — AI 根据语境触发情绪动画，从陌生到羁绊的关系体系，LCD 红心可视化
+- 🦾 **AI 控制 6 关节舵机** — 大模型自主设计姿态，22 个动作原语 + 自由序列，AI 意识的物理化表达
+- ⚙️ **Web 配置门户** — 手机连热点即配 WiFi/LLM/钉钉/搜索密钥，配网到使用 2 分钟搞定
+- 🔓 **全栈开源** — 硬件、软件、3D 模型全部开源，CC BY-NC-SA 4.0
+
+---
 
 ## 🆕 Claude Code 螃蟹助手
 
