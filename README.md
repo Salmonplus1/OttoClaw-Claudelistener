@@ -94,8 +94,10 @@ OttoClaw 与市面上其他 AI 玩具和桌面机器人不同：
 
 ### PC 端交互流程
 
-1. Claude Code 状态变化 → hook 触发 → WebSocket → Otto LCD 自动切动画
-2. 按 Otto 的 BOOT 按钮 → WebSocket 广播 → PC 窗口激活 + 自动回车确认
+```
+Claude Code 状态变化 → hook 触发 → WebSocket → Otto LCD 自动切动画
+   按 Otto 的 BOOT 按钮 → WebSocket 广播 → PC 窗口激活 + 自动回车确认
+```
 
 ### 快速配置 Claude Code
 
